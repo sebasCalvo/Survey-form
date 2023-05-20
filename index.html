@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <header>
+            <h1 id="title"><strong>Survey Form</strong></h1>
+            <p id="description">Help us to improve our work</p>
+        </header>
+    <div class="container">
+        <!--FORM-->
+        <form id="survey-form">
+
+            <!--NAME-->
+            <div class="form-item">
+                <fieldset>
+                <label for="name" name="name" id="name-label">Enter your name<input type="text" id="name" placeholder="Last name, First name" required></label>
+            
+            <!--EMAIL-->
+                <label for="email" name="email" id="email-label">Enter your email<input type="email" id="email" placeholder="example@email.com"required></label>
+                
+            <!--AGE-->
+                <label for="age" name="age" id="number-label">Enter your age<input type="number" id="number" min="13" max="120" placeholder="Years"></label>
+            </fieldset>
+            </div>
+
+            <!--FEEDBACK-->
+            <div class="form-item">
+                <fieldset>
+            <!--DROPDOWN SELECT-->
+                    <label for="dropdown">How did you meet us?
+                    <select id="dropdown" name="dropdown">
+                        <option value="">select an option</option>
+                        <option value="1">Adds</option>
+                        <option value="2">Someone</option>
+                        <option value="3">Other</option>
+                    </select>
+                    </label>
+                    
+            <!--RADIO BUTTONS-->        
+                    <label>Have you visited us recently?</label>
+                    <label for="yes" name="visit">Yes  <input type="radio" id="yes" name="visit" class="inline" value="yes"></label>
+                    <label for="no" name="visit">No  <input type="radio" id="no" name="visit" class="inline" value="no"></label>
+             <!--CHECKBOXES-->  
+                    <label>What kind of treatment do you receive?</label>
+                    <label for="friendly"><input id="friendly" type="checkbox" name="treatment" value="friendly" class="inline"> Friendly</label>
+                    <label for="respectful"><input id="respectful" type="checkbox" name="treatment" value="respectful" class="inline"> Respectful</label>
+                    <label for="not-friendly"><input id="not-friendly" type="checkbox" name="treatment" value="not-friendly" class="inline"> Not-friendly</label>
+                    <label for="disrespectful"><input id="disrespectful" type="checkbox" name="treatment" value="disrespectful" class="inline"> Disrespectful</label>
+                </fieldset>
+            </div>
+
+
+            <div class="form-item">
+            <!--TEXTAREA-->
+                <fieldset>
+                    <label for="comments" name="">More comments:
+                    <textarea type="text" id="comments" name="comments" rows="3" cols="30" placeholder="You can improve..."></textarea>
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="form-item">
+                <label for="submit" name="submit"><input type="submit" id="submit" value="Submit"></label>
+            </div>
+
+            
+        </form>
+    </div>
+</body>
+</html>
